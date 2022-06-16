@@ -38,6 +38,7 @@ label {
 #navbar-section {
   font-family: "Montserrat", sans-serif;
   background-color: white;
+  overflow-x: hidden;
 }
 
 #navbar-section #navbarNav {
@@ -74,6 +75,7 @@ label {
   justify-self: center; */
   background-image: url("../images/EKG-with-flatline.mp4");
   background-size: cover;
+  overflow-x: hidden;
 }
 
 #background-video {
@@ -91,13 +93,21 @@ label {
   filter: brightness(0.5);
 }
 
+#landing-section .landing-text {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 #landing-section .landing-text h1 {
   color: #ffffff;
   font-size: 60px;
   padding-top: 50px;
 }
 
-#landing-section .landing-text h2 {
+#landing-section .landing-text h2,
+#landing-section .landing-text h3 {
   color: #ffffff;
 }
 
@@ -113,6 +123,10 @@ label {
   transition: all ease-in-out 200ms;
 }
 
+.why-choose-section {
+  overflow-x: hidden;
+}
+
 .landing-points {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -123,9 +137,9 @@ label {
   flex-direction: column;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  justify-content: end;
-  min-height: 80vh;
-  padding-bottom: 50px;
+  justify-content: center;
+  /* min-height: 80vh; */
+  padding: 50px 0;
 }
 
 ul {
@@ -146,13 +160,14 @@ ul li::before {
 
 .landing-points h3,
 .landing-points ul li {
-  color: white;
+  color: #000;
 }
 
 #manage-section {
   padding: 50px 0;
   font-family: "Commissioner", sans-serif;
   background-color: #e5f8ea;
+  overflow-x: hidden;
 }
 
 #manage-section .right-section-img {
@@ -185,6 +200,7 @@ ul li::before {
 
 #why-us-section {
   background-color: #e5f8ea;
+  overflow-x: hidden;
 }
 
 .our-vision-wrapper {
@@ -316,10 +332,12 @@ ul li::before {
   background-color: #ffffff;
   text-align: center;
   padding: 50px 0 0 0;
+  overflow-x: hidden;
 }
 
 #founder-section .founder-wrapper {
   overflow-x: hidden;
+  padding-top: 15px;
 }
 
 #founder-section .founder-wrapper .founder-img {
@@ -338,6 +356,7 @@ ul li::before {
 #video-section {
   background-color: #ffffff;
   text-align: center;
+  overflow-x: hidden;
 }
 
 #video-section .ad-video {
@@ -347,6 +366,7 @@ ul li::before {
 #slider-section {
   background-color: #ffffff;
   padding: 50px 0;
+  overflow-x: hidden;
 }
 
 #slider-section .slider-wrapper img {
@@ -486,6 +506,7 @@ ul li::before {
 
 #video-call-section {
   background-color: #e5f8ea;
+  overflow-x: hidden;
 }
 
 .calender-input {
@@ -498,6 +519,7 @@ ul li::before {
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
+  overflow-x: hidden;
 }
 
 #form-section .form-row {
@@ -842,7 +864,8 @@ ul li::before {
 
   #manage-section .left-section-para h2,
   #why-us-section .right-section h2,
-  .our-vision-wrapper h1 {
+  .our-vision-wrapper h1,
+  .landing-points h2 {
     text-align: center;
   }
 
@@ -941,7 +964,7 @@ ul li::before {
   }
 
   .footer-logo-img {
-    width: 250px;
+    width: 200px;
   }
 
   #video-section .ad-video {
