@@ -35,6 +35,23 @@ label {
   color: #000;
 }
 
+#whatsapp-icon {
+  position: fixed;
+  bottom: 4%;
+  right: 2%;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  background-color: #00ae4d;
+  z-index: 9999999;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#whatsapp-icon img {
+  width: 50px;
+}
+
 #navbar-section {
   font-family: "Montserrat", sans-serif;
   background-color: white;
