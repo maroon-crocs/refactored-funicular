@@ -220,7 +220,8 @@ ul li::before {
   overflow-x: hidden;
 }
 
-.our-vision-wrapper {
+.our-vision-wrapper,
+.landing-points {
   padding: 50px 0;
   width: 70%;
   margin: auto;
@@ -988,7 +989,8 @@ ul li::before {
     width: 100%;
   }
 
-  .our-vision-wrapper {
+  .our-vision-wrapper,
+  .landing-points {
     width: 100%;
   }
 
