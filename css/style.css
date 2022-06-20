@@ -74,6 +74,10 @@ label {
   color: #ffffff;
 }
 
+.navbar-nav {
+  align-items: center;
+}
+
 #navbar-section .nav-item {
   margin-right: 40px;
   list-style: none;
@@ -117,10 +121,12 @@ label {
   justify-content: center;
 }
 
-#landing-section .landing-text h1 {
+#landing-section .landing-text h1,
+#doctor-txt {
   color: #ffffff;
   font-size: 60px;
   padding-top: 50px;
+  display: inline-block;
 }
 
 #landing-section .landing-text h2,
@@ -853,6 +859,10 @@ ul li::before {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+  }
+
+  .nav-item {
+    margin: 10px 0;
   }
 
   .navbar-brand {
