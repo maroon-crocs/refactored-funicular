@@ -555,7 +555,7 @@ ul li::before {
   -ms-flex-pack: center;
   justify-content: center;
 }
-.contact-form {
+#contact-form {
   width: 75%;
   margin: auto;
   background-color: rgba(159, 206, 248, 0.7215686274509804);
@@ -977,7 +977,7 @@ ul li::before {
     padding: 40px 20px;
   }
 
-  #form-section .contact-form {
+  #form-section #contact-form {
     width: 100%;
   }
 

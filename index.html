@@ -263,9 +263,13 @@
             <div class="row">
                 <h3 id="appoint-text" class="p-2">Book Appointment</h3>
                 <div class="col-md-12">
-                    <form action="">
+                    <form method="POST" action="https://formsubmit.co/directdoctor1@gmail.com"
+                        enctype="multipart/form-data">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="text" name="_honey" style="display:none">
+                        <input type="hidden" name="_subject" value="Video Call Appointment on DirectDoctor website">
                         <label id="date-time" for="floatingNumber">Date & Time</label>
-                        <input id="floatingCalender" type="datetime-local"
+                        <input id="floatingCalender" name="datetime-local" type="datetime-local"
                             class="form-control mt-3 mb-3 calender-input">
                         <input type="submit" value="SUBMIT" class="btn btn-primary">
                     </form>
@@ -285,25 +289,29 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <form class="contact-form">
+                    <form id="contact-form" method="POST" action="https://formsubmit.co/directdoctor1@gmail.com"
+                        enctype="multipart/form-data">
                         <div class="mb-3 form-floating">
-                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                                placeholder="NAME" required>
+                            <input type="hidden" name="_template" value="table">
+                            <input type="text" name="_honey" style="display:none">
+                            <input type="hidden" name="_subject" value="New Enquiry on DirectDoctor website">
+                            <input type="text" name="name" class="form-control" id="input-name" placeholder="NAME"
+                                required>
                             <label id="name-text" for="floatingName">Name</label>
                         </div>
                         <div class="mb-3 form-floating">
-                            <input type="number" class="form-control" id="exampleInputNumber" placeholder="NUMBER"
-                                required>
+                            <input type="number" name="number" class="form-control" id="input-number"
+                                placeholder="NUMBER" required>
                             <label id="phone-number-text" for="floatingNumber">Number</label>
                         </div>
                         <div class="mb-3 form-floating">
-                            <input type="file" class="form-control" id="exampleInputCity"
+                            <input type="file" name="attachment" class="form-control" id="input-prescription"
                                 placeholder="CITY OF PRACTICE">
                             <label id="prescription-text" for="floatingTextarea">Prescription</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <textarea class="form-control" placeholder="Leave a comment here"
-                                id="floatingTextarea"></textarea>
+                            <textarea class="form-control" name="message" placeholder="Leave a comment here"
+                                id="input-textarea"></textarea>
                             <label id="textarea-text" for="floatingTextarea">What is Health Problem</label>
                         </div>
                         <div class="contact-form-btn">
@@ -369,10 +377,10 @@
     </section>
     <!-- JAVASCRIPT -->
     <script src="./js/jquery-3.6.0.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/form.js"></script>
     <script src="./plugins/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./plugins/slick-1.8.1/slick/slick.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.5/umd/popper.min.js"></script>
     <script src="./js/language.js"></script>
 
     <script>
@@ -410,10 +418,6 @@
 
 
         })();
-
-
-
-
 
     </script>
 </body>
