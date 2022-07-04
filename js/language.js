@@ -29,13 +29,15 @@ let dateTime = document.getElementById("date-time");
 let beAPartText = document.getElementById("be-a-part-text");
 let withText = document.getElementById("with-text");
 let ddText = document.getElementById("dd-text");
-let forProfText = document.getElementById("for-prof-text");
+// let forProfText = document.getElementById("for-prof-text");
 let callUsText = document.getElementById("call-us-text");
 let numberText = document.getElementById("number-text");
 let nameText = document.getElementById("name-text");
 let phoneNumberText = document.getElementById("phone-number-text");
 let prescriptionText = document.getElementById("prescription-text");
 let textareaText = document.getElementById("textarea-text");
+let landingCta = document.getElementById("landing-cta");
+let withOurDoctorText = document.getElementById("with-our-doctor-text");
 
 const english = {
   heading1: "Welcome to the Future of Health and Care",
@@ -72,7 +74,7 @@ const english = {
   videoCallText: "Quick Video Call Consultation",
   appointText: "Book Appointment",
   dateTime: "Date & Time",
-  forProfText: "(For Professional Health Care Providers only)",
+  // forProfText: "(For Professional Health Care Providers only)",
   ddText:
     "<h1 id='dd-text'>Direct <span style='color:#00ae4d;'>Doctor</span></h1>",
   withText: "with",
@@ -82,7 +84,9 @@ const english = {
   nameText: "Name",
   phoneNumberText: "Number",
   prescriptionText: "Prescription",
-  textareaText: "What is Health Problem",
+  textareaText: "What is Health Problem ?",
+  landingCta: "Book Consultation Now",
+  withOurDoctorText: "With our Doctors",
 };
 
 const hindi = {
@@ -120,7 +124,7 @@ const hindi = {
   videoCallText: "त्वरित वीडियो कॉल परामर्श",
   appointText: "निर्धारित तारीख बुक करना",
   dateTime: "दिनांक और समय",
-  forProfText: "(केवल पेशेवर स्वास्थ्य देखभाल प्रदाताओं के लिए)",
+  // forProfText: "(केवल पेशेवर स्वास्थ्य देखभाल प्रदाताओं के लिए)",
   ddText:
     "<h1 id='dd-text'>प्रत्यक्ष  <span style='color:#00ae4d;'>चिकित्सक</span></h1>",
   withText: "साथ",
@@ -131,6 +135,8 @@ const hindi = {
   phoneNumberText: "मोबाइल नंबर",
   prescriptionText: "नुस्खा",
   textareaText: "स्वास्थ्य समस्या क्या है?",
+  landingCta: "अभी अपना परामर्श बुक करें",
+  withOurDoctorText: "हमारे डॉक्टरों के साथ",
 };
 
 const englishToHindi = () => {
@@ -160,7 +166,7 @@ const englishToHindi = () => {
   videoCallText.innerHTML = hindi.videoCallText;
   appointText.innerHTML = hindi.appointText;
   dateTime.innerHTML = hindi.dateTime;
-  forProfText.innerHTML = hindi.forProfText;
+  // forProfText.innerHTML = hindi.forProfText;
   ddText.innerHTML = hindi.ddText;
   withText.innerHTML = hindi.withText;
   beAPartText.innerHTML = hindi.beAPartText;
@@ -170,6 +176,8 @@ const englishToHindi = () => {
   phoneNumberText.innerHTML = hindi.phoneNumberText;
   prescriptionText.innerHTML = hindi.prescriptionText;
   textareaText.innerHTML = hindi.textareaText;
+  landingCta.innerHTML = hindi.landingCta;
+  withOurDoctorText.innerHTML = hindi.withOurDoctorText;
 };
 
 const hindiToEnglish = () => {
@@ -199,7 +207,7 @@ const hindiToEnglish = () => {
   videoCallText.innerHTML = english.videoCallText;
   appointText.innerHTML = english.appointText;
   dateTime.innerHTML = english.dateTime;
-  forProfText.innerHTML = english.forProfText;
+  // forProfText.innerHTML = english.forProfText;
   ddText.innerHTML = english.ddText;
   withText.innerHTML = english.withText;
   beAPartText.innerHTML = english.beAPartText;
@@ -209,6 +217,8 @@ const hindiToEnglish = () => {
   phoneNumberText.innerHTML = english.phoneNumberText;
   prescriptionText.innerHTML = english.prescriptionText;
   textareaText.innerHTML = english.textareaText;
+  landingCta.innerHTML = english.landingCta;
+  withOurDoctorText.innerHTML = english.withOurDoctorText;
 };
 
 engBtn.addEventListener("click", hindiToEnglish);

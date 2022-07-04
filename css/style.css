@@ -138,6 +138,36 @@ label {
   color: rgba(255, 0, 0, 0.555);
 }
 
+#landing-cta {
+  width: 230px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+#landing-cta::after {
+  content: "\f105";
+  display: inline-block;
+  font-family: "FontAwesome";
+  animation: glide 1s linear infinite;
+  margin-left: 10px;
+  transition: 200ms ease-in-out;
+}
+
+@keyframes glide {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
 .calling-num {
   color: red;
   font-weight: bold;
@@ -375,6 +405,14 @@ ul li::before {
 #founder-section .founder-wrapper .dr-name {
   padding: 15px 0;
   color: red;
+}
+
+#interview-section {
+  background-color: #ffffff;
+}
+
+.interview-video {
+  width: 100%;
 }
 
 #video-section {
@@ -893,7 +931,8 @@ ul li::before {
   #manage-section .left-section-para h2,
   #why-us-section .right-section h2,
   .our-vision-wrapper h1,
-  .landing-points h2 {
+  .landing-points h2,
+  #our-vision-heading {
     text-align: center;
   }
 
